@@ -1,5 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
 }
@@ -12,4 +20,33 @@ body {
 
   --heading-text: 2rem;
   --defaut-text: 1.125rem;
+}
+
+/* <!-- header section design --> */
+header {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  padding: 12px 5%;
+  border-bottom: 1px solid #f7f9fb;
+  transition: all 0.45s ease;
+}
+
+.logo {
+  width: 142px;
+  flex-wrap: nowrap;
+  margin-top: 10px;
+}
+
+.logo img {
+  width: 100%;
+  height: 39px;
+  align-items: center;
 }
